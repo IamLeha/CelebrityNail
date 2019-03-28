@@ -1,4 +1,4 @@
-.main-container{
+.main-container {
     width: 100%;
 
     &__advantages {
@@ -8,5 +8,174 @@
 
     &__advantages--midle {
         background: #4b4747;
+    }
+}
+
+.card {
+    @include dflex(space-between, unset);
+    flex-wrap: wrap;
+    padding: 3%;
+
+    &__item {
+        width: 31%;
+        @include dflex(space-between, center);
+    }
+
+    &__item p {
+        width: 65%;
+        margin-top: 2%;
+        text-align: start;
+        margin-left: 5%;
+    }
+
+    &__item--sircle {
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item--sircle img {
+        width: 50px;
+    }
+
+    &__item:nth-child(4) {
+        margin-top: 4%;
+    }
+
+    &__item:nth-child(5) {
+        margin-top: 4%;
+    }
+
+    &__item:nth-child(6) {
+        margin-top: 4%;
+    }
+}
+
+.gradient {
+    @include dflex (flex-end, unset);
+    background-image: linear-gradient(-90deg, #2b2929 1%, #00000000)
+}
+
+.main-container-price {
+    width: 100%;
+
+    &__midle {
+        width: 100%;
+        background: url(../../img/beautiful-black-and-white-close-up-1399073.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 15%;
+
+    &__item {
+        background: #4b4747b9;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 4%;
+        height: 40%;
+    }
+
+    &__item--box {
+        @include dflex (unset, center);
+    }
+
+    &__item--box p {
+        margin-left: 4%;
+    }
+
+    &__item--box img {
+        width: 35px;
+    }
+
+    &__item--title p {
+        margin-top: 4%;
+    }
+
+    &__item-nubber h3:nth-child(2) {
+        margin-top: 4%;
+    }
+}
+
+.price--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 7%;
+}
+
+.price--img img {
+    height: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 769px) {
+    .card {
+        @include dflex (space-between, unset);
+
+        &__item {
+            width: 50%;
+            @include dflex (unset, center);
+        }
+
+        &__item:nth-child(3) {
+            margin-top: 4%;
+        }
+
+        &__item p {
+            width: 60%;
+            margin-left: 8%;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item p {
+            width: 80%;
+            text-align: center;
+            margin-left: 0;
+        }
+
+        &__item:nth-child(2) {
+            margin-top: 4%;
+        }
+    }
+
+    .price--img{
+        display: none;
     }
 }
