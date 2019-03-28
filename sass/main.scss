@@ -1,0 +1,13 @@
+@import 'vendors/mixin';
+@import 'base/color';
+@import 'base/normalize';
+@import 'base/typography';
+
+@import 'layout/footer';
+@import 'layout/header';
+
+@import 'pages/home.scss';
+@import 'pages/blog';
+@import 'pages/comments';
+@import 'pages/studia';
+

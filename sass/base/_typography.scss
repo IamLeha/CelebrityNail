@@ -1,0 +1,22 @@
+html, body{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    color: $links-defoult;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    color: $links-defoult;
+}
+
+.box-navbar a{
+    text-transform: uppercase;
+}
+
+.title-default {
+    text-align: center;
+    padding: 2% 0;
+}
