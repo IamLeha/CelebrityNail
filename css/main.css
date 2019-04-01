@@ -1,6 +1,9 @@
 .wrapper {
   background: #000; }
 
+a {
+  color: #fff !important; }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -8,15 +11,24 @@ html, body {
   width: 100%;
   min-height: 100vh; }
 
-html, body {
-  font-family: 'Museo Sans Cyrl', sans-serif;
+html,
+body {
+  font-family: 'Museo Sans Cyrl', sans-serif !important;
   color: #fff; }
 
-h1, h2, h3, h4, h5, h6, p, a {
-  font-weight: 100; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-weight: 100 !important;
+  color: #fff; }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff; }
 
 .box-navbar a {
@@ -25,6 +37,30 @@ a {
 .title-default {
   text-align: center;
   padding: 1% 0; }
+
+.table {
+  color: #fff !important; }
+
+.table th:nth-child(1) {
+  border-top: none; }
+
+.table th:nth-child(2) {
+  border-top: none; }
+
+.table th:nth-child(3) {
+  border-top: none; }
+
+th {
+  text-align: center !important; }
+
+th:last-child {
+  color: #b1b1b180; }
+
+tr td:not(:first-child) {
+  text-align: center !important; }
+
+tr td:last-child {
+  color: #b1b1b180; }
 
 footer {
   width: 100%;
@@ -81,7 +117,7 @@ footer {
     text-align: center;
     font-weight: 100;
     font-size: 45px;
-    padding: 3%; }
+    padding: 1%; }
   .boss-container__midle {
     width: 100%;
     background: #c4c4c4; }
@@ -136,7 +172,7 @@ input[type="button"] {
 textarea {
   width: 100%;
   height: 100px;
-  margin: 20px 0;
+  margin: 20px 0 !important;
   padding-left: 5px;
   padding-top: 5px;
   color: #000; }
@@ -233,6 +269,7 @@ form input::-webkit-input-placeholder {
 
 header {
   width: 100%;
+  position: fixed;
   background: #000;
   z-index: 1;
   box-shadow: 0 0 15px #000; }
@@ -358,7 +395,7 @@ header {
   .main-container__advantages--midle {
     background: #4b4747; }
 
-.card {
+.advantages-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +407,7 @@ header {
   align-items: unset;
   flex-wrap: wrap;
   padding: 3%; }
-  .card__item {
+  .advantages-card__item {
     width: 31%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,12 +418,12 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .card__item p {
+  .advantages-card__item p {
     width: 65%;
     margin-top: 2%;
     text-align: start;
     margin-left: 5%; }
-  .card__item--sircle {
+  .advantages-card__item--sircle {
     width: 100px;
     height: 100px;
     background: #fff;
@@ -394,13 +431,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .card__item--sircle img {
+  .advantages-card__item--sircle img {
     width: 50px; }
-  .card__item:nth-child(4) {
+  .advantages-card__item:nth-child(4) {
     margin-top: 4%; }
-  .card__item:nth-child(5) {
+  .advantages-card__item:nth-child(5) {
     margin-top: 4%; }
-  .card__item:nth-child(6) {
+  .advantages-card__item:nth-child(6) {
     margin-top: 4%; }
 
 .gradient {
@@ -562,7 +599,7 @@ header {
     margin-top: 5%; } }
 
 @media screen and (max-width: 769px) {
-  .card {
+  .advantages-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -572,7 +609,7 @@ header {
     -webkit-box-align: unset;
     -ms-flex-align: unset;
     align-items: unset; }
-    .card__item {
+    .advantages-card__item {
       width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -583,9 +620,9 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-    .card__item:nth-child(3) {
+    .advantages-card__item:nth-child(3) {
       margin-top: 4%; }
-    .card__item p {
+    .advantages-card__item p {
       width: 60%;
       margin-left: 8%; }
   .main-container-instagram__midle a {
@@ -594,18 +631,18 @@ header {
     margin-top: 3%; } }
 
 @media screen and (max-width: 426px) {
-  .card {
+  .advantages-card {
     display: flex;
     flex-direction: column; }
-    .card__item {
+    .advantages-card__item {
       width: 100%;
       display: flex;
       flex-direction: column; }
-    .card__item p {
+    .advantages-card__item p {
       width: 80%;
       text-align: center;
       margin-left: 0; }
-    .card__item:nth-child(2) {
+    .advantages-card__item:nth-child(2) {
       margin-top: 4%; }
   .price--img {
     display: none; }
@@ -637,4 +674,102 @@ header {
   width: 100%;
   box-shadow: 0 3px 2px 0 #7d7878;
   height: 30.7vw;
-  background-size: 100%; }
+  min-height: 200px;
+  background-size: 100%;
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px; }
+
+.main-container__tabs {
+  width: 80%;
+  margin: 0 auto; }
+
+.img-card {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset; }
+  .img-card__item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url(../../img/art-black-and-white-blur-693598.jpg) 100% 75% no-repeat;
+    padding: 0 !important;
+    background-size: 100%; }
+  .img-card__items {
+    width: 22%;
+    height: 20vw;
+    cursor: pointer; }
+  .img-card__item p {
+    position: relative;
+    top: 80%;
+    text-align: center;
+    color: white;
+    padding: 10px 0 10px 0;
+    background: #00000080; }
+
+.txt-link {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background: #000; }
+
+.txt-link a {
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #000 !important;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 20px; }
+
+.nav-link {
+  padding: 0.3rem 1rem; }
+
+@media screen and (max-width: 1025px) {
+  .img-card__item p {
+    position: relative;
+    top: 70%;
+    font-size: 14px; } }
+
+@media screen and (max-width: 769px) {
+  .img-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    flex-wrap: wrap; }
+    .img-card__items {
+      width: 40%;
+      height: 35vw; }
+    .img-card__items:nth-child(3) {
+      margin-top: 5%; }
+    .img-card__items:nth-child(4) {
+      margin-top: 5%; } }
+
+@media screen and (max-width: 426px) {
+  .main-container__tabs {
+    width: 95%;
+    margin: 0 auto; }
+  .img-card__items {
+    width: 45%;
+    height: 39vw; }
+  .img-card__item p {
+    font-size: 9px; }
+  .title-default h1 {
+    font-size: 30px; }
+  .txt-link a {
+    font-size: 12px; }
+  .table td {
+    font-style: 12px; } }

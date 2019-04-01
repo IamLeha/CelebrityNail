@@ -11,7 +11,7 @@
     }
 }
 
-.card {
+.advantages-card {
     @include dflex(space-between, unset);
     flex-wrap: wrap;
     padding: 3%;
@@ -239,7 +239,7 @@
 @media screen and (max-width: 769px) {
 
 
-    .card {
+    .advantages-card {
         @include dflex (space-between, unset);
 
         &__item {
@@ -270,7 +270,7 @@
 }
 
 @media screen and (max-width: 426px) {
-    .card {
+    .advantages-card {
         display: flex;
         flex-direction: column;
 

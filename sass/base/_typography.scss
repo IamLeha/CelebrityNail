@@ -1,18 +1,27 @@
-html, body{
-    font-family: 'Museo Sans Cyrl', sans-serif;
+html,
+body {
+    font-family: 'Museo Sans Cyrl', sans-serif !important;
     color: $links-defoult;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
-    font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-weight: 100 !important;
+    color: #fff;
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none !important;
     color: $links-defoult;
 }
 
-.box-navbar a{
+.box-navbar a {
     text-transform: uppercase;
 }
 
@@ -20,3 +29,36 @@ a{
     text-align: center;
     padding: 1% 0;
 }
+
+.table {
+    color: #fff !important;
+}
+
+.table th:nth-child(1) {
+    border-top: none;
+}
+
+.table th:nth-child(2) {
+    border-top: none;
+}
+
+.table th:nth-child(3) {
+    border-top: none;
+}
+
+th {
+    text-align: center !important;
+}
+
+th:last-child {
+    color: #b1b1b180;
+}
+
+tr td:not(:first-child) {
+    text-align: center !important;
+}
+
+tr td:last-child {
+    color: #b1b1b180;
+}
+

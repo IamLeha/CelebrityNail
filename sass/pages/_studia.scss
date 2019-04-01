@@ -1,7 +1,139 @@
-.main-img-studia{
+.main-img-studia {
     background: url(../../img/main-img.jpg)100% 75% no-repeat;
     width: 100%;
     box-shadow: 0 3px 2px 0 #7d7878;
     height: 30.7vw;
+    min-height: 200px;
     background-size: 100%;
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-container {
+
+    &__tabs {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.img-card {
+    width: 100%;
+    margin: 0 auto;
+    @include dflex(space-between, unset);
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: url(../../img/art-black-and-white-blur-693598.jpg) 100% 75% no-repeat;
+        padding: 0 !important;
+        background-size: 100%;
+    }
+
+    &__items {
+        width: 22%;
+        height: 20vw;
+        cursor: pointer;
+    }
+
+    &__item p {
+        position: relative;
+        top: 80%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 0 10px 0;
+        background: #00000080;
+    }
+}
+
+.txt-link {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background: #000;
+}
+
+.txt-link a {
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #000 !important;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    padding: 0.3rem 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    .img-card {
+
+        &__item p {
+            position: relative;
+            top: 70%;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .img-card {
+        @include dflex(space-evenly, unset);
+        flex-wrap: wrap;
+
+
+        &__items {
+            width: 40%;
+            height: 35vw;
+        }
+
+        &__items:nth-child(3) {
+            margin-top: 5%;
+        }
+
+        &__items:nth-child(4) {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-container {
+
+        &__tabs {
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+
+    .img-card {
+
+
+        &__items {
+            width: 45%;
+            height: 39vw;
+        }
+    }
+
+    .img-card {
+
+        &__item p {
+            font-size: 9px;
+        }
+    }
+
+    .title-default h1 {
+        font-size: 30px;
+    }
+
+    .txt-link a {
+        font-size: 12px;
+    }
+
+    .table td {
+        font-style: 12px;
+    }
 }

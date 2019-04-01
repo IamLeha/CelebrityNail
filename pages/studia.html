@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../font/museosanscyrl.css">
     <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Selebrity nail</title>
 </head>
 
@@ -16,7 +18,7 @@
         <header>
             <div class="header-container">
                 <div class="box-logo">
-                    <a class="box-logo--link" href="index.html"><img src="../img/лого.png" alt="Logo"></a>
+                    <a class="box-logo--link" href="../../index.html"><img src="../img/лого.png" alt="Logo"></a>
                 </div>
 
                 <div class="box-navbar">
@@ -38,6 +40,804 @@
         <div class="main-img-studia"></div>
 
         <main class="main-container">
+
+            <div class="main-container__tabs">
+                <div class="title-default">
+                    <h1>Наши цены</h1>
+                </div>
+                <ul class="nav mb-3 img-card" id="pills-tab" role="tablist">
+                    <li class="nav-item img-card__items">
+                        <a class="nav-link active img-card__item" id="pills-home-tab" data-toggle="pill"
+                            href="#hairdresser-services" role="tab" aria-controls="hairdresser-services"
+                            aria-selected="true">
+                            <p>Парикмахерские услуги</p>
+                        </a>
+                    </li>
+                    <li class="nav-item img-card__items">
+                        <a class="nav-link img-card__item" id="pills-profile-tab" data-toggle="pill"
+                            href="#manicure-pedicure" role="tab" aria-controls="manicure-pedicure"
+                            aria-selected="false">
+
+                            <p>Mаникюр и педикюр</p>
+                        </a>
+                    </li>
+                    <li class="nav-item img-card__items">
+                        <a class="nav-link img-card__item" id="pills-contact-tab" data-toggle="pill" href="#cosmetology"
+                            role="tab" aria-controls="cosmetology" aria-selected="false">
+
+                            <p>Косметология</p>
+                        </a>
+                    </li>
+                    <li class="nav-item img-card__items">
+                        <a class="nav-link img-card__item" id="pills-contact-tab" data-toggle="pill" href="#makeup"
+                            role="tab" aria-controls="makeup" aria-selected="false">
+
+                            <p>Макияж</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="hairdresser-services" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <nav>
+                            <div class="nav txt-link" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#haircut"
+                                    role="tab" aria-controls="haircut" aria-selected="true">Стрижки
+                                </a>
+
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#piling"
+                                    role="tab" aria-controls="piling" aria-selected="false"> Укладки </a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#coloring-loreal" role="tab" aria-controls="coloring-loreal"
+                                    aria-selected="false">Окрашивание L`oreal</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#coloring-kydra" role="tab" aria-controls="coloring-kydra"
+                                    aria-selected="false">Окрашивание Kydra </a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#author-coloring" role="tab" aria-controls="author-coloring"
+                                    aria-selected="false">Авторское
+                                    окрашивание </a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#hair-care"
+                                    role="tab" aria-controls="hair-care" aria-selected="false">Уход для волос </a>
+
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="haircut" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="piling" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="coloring-loreal" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="coloring-kydra" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="author-coloring" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="hair-care" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Стрижка мужская</td>
+                                            <td>2200</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка женская</td>
+                                            <td>2000</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка мужская машинкой</td>
+                                            <td>1100</td>
+                                            <td>30 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка десткая</td>
+                                            <td>1150</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Стрижка частичная (челка/виски/борода)</td>
+                                            <td>550</td>
+                                            <td>15 мин</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="manicure-pedicure" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <nav>
+                            <div class="nav txt-link" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#manicure"
+                                    role="tab" aria-controls="manicure" aria-selected="true">Маникюр</a>
+
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#pedicure"
+                                    role="tab" aria-controls="pedicure" aria-selected="false">Педикюр</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#сare"
+                                    role="tab" aria-controls="сare" aria-selected="false">Уход</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#cover"
+                                    role="tab" aria-controls="cover" aria-selected="false">Покрытие</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#additional-services" role="tab" aria-controls="additional-services"
+                                    aria-selected="false">Дополнителнительные
+                                    услуги</a>
+
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="manicure" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="pedicure" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="сare" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="cover" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="additional-services" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="cosmetology" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <nav>
+                            <div class="nav txt-link" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#massages"
+                                    role="tab" aria-controls="massages" aria-selected="true">Массажи</a>
+
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#eyebrows"
+                                    role="tab" aria-controls="eyebrows" aria-selected="false">Брови/Ресницы/Татуаж</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                    href="#hardware-cosmetology" role="tab" aria-controls="hardware-cosmetology"
+                                    aria-selected="false">Аппаратная
+                                    Косметология</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#face-care"
+                                    role="tab" aria-controls="face-care" aria-selected="false">Уход для лица</a>
+
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#peels"
+                                    role="tab" aria-controls="peels" aria-selected="false">Пилинги</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#depilation"
+                                    role="tab" aria-controls="depilation"
+                                    aria-selected="false">Депиляция(Воск/Сахар)</a>
+
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="massages" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Маникюр Классический</td>
+                                            <td>990</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Аппаратный/ Комбинированный</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр Бразильский</td>
+                                            <td>1150</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="additional-services" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="eyebrows" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="hardware-cosmetology" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="face-care" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="peels" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="depilation" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Массаж лица 30 мин</td>
+                                            <td>1550</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж лица 45 мин</td>
+                                            <td>2100</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурный массаж лица</td>
+                                            <td>3450</td>
+                                            <td>1 час. 15 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маникюр (при записи на покрытие)</td>
+                                            <td>450</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="makeup" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <nav>
+                            <div class="nav txt-link" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#make-up"
+                                    role="tab" aria-controls="make-up" aria-selected="true">Макияжи</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="make-up" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Стоимость</th>
+                                            <th scope="col">Время</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Макияж дневной</td>
+                                            <td>2200</td>
+                                            <td>45 мин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Макияж ночной</td>
+                                            <td>3300</td>
+                                            <td>1 час</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </main>
 
@@ -103,9 +903,9 @@
 
                 <div class="footer-container__social">
                     <div class="footer-container__social-top">
-                        <a href="#"><img src="img/soc11.png" alt=""></a>
-                        <a href="#"><img src="img/soc22.png" alt=""></a>
-                        <a href="#"><img src="img/soc33.png" alt=""></a>
+                        <a href="#"><img src="../img/soc11.png" alt=""></a>
+                        <a href="#"><img src="../img/soc22.png" alt=""></a>
+                        <a href="#"><img src="../img/soc33.png" alt=""></a>
                     </div>
                     <div class="footer-container__social-bottom">
                         <p>Разработка сайти <a href="#">Digital-агентство D-Partners</a></p>
@@ -123,6 +923,16 @@
 
     <script type="text/javascript" src="../source/jquery.fancybox.pack.js"></script>
     <script src="../js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
