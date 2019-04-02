@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background: linear-gradient(to top,#000,#393939);
+    background: linear-gradient(to top, #000, #393939);
 }
 
 .footer-container {
@@ -10,8 +10,8 @@ footer {
     display: flex;
 
     &__modal {
-        width: 30%;
-        padding: 2% 2% 2% 0;
+        width: 36% !important;
+        padding: 2% 2% 2% 0 !important;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -21,11 +21,11 @@ footer {
         padding: 10px;
         border: 1px solid #575454;
         width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex(center, center);
         text-align: center;
+        min-width: 120px;
     }
+
 
     &__modal a:nth-child(3) {
         margin-top: 20px;
@@ -51,6 +51,12 @@ footer {
     &__social a:not(:first-child) {
         margin-left: 12px;
     }
+}
+
+.other{
+}
+.other a{
+    width: 45% !important;
 }
 
 .boss-container {
@@ -196,7 +202,7 @@ form input::-webkit-input-placeholder {
         align-items: center;
 
         &__modal {
-            width: 50%;
+            width: 50% !important;
             padding: 2%;
         }
 

@@ -80,9 +80,8 @@
     &__item {
         background: #4b4747b9;
         width: 100%;
-        display: flex;
+        @include dflex (space-between, unset);
         flex-direction: column;
-        justify-content: space-around;
         padding: 4%;
         height: 40%;
     }

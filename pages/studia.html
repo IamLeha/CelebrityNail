@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../font/museosanscyrl.css">
     <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
 
     <title>Selebrity nail</title>
 </head>
@@ -28,10 +32,10 @@
 
                     <div class="box-navbar__links">
                         <a class="navbar-link" href="pages/studia.html">Студии</a>
-                        <a class="navbar-link" href="#adress">Цены</a>
+                        <a class="navbar-link" href="../index.html#adress">Цены</a>
                         <a class="navbar-link" href="#">Акции</a>
-                        <a class="navbar-link" href="#bonuses">Бонусная программа</a>
-                        <a class="navbar-link" href="#instagram">Instagram</a>
+                        <a class="navbar-link" href="../index.html#bonuses">Бонусная программа</a>
+                        <a class="navbar-link" href="../index.html#instagram">Instagram</a>
                         <a class="navbar-link" href="pages/blog.html">Блог</a>
                     </div>
                 </div>
@@ -41,6 +45,25 @@
         <div class="main-img-studia"></div>
 
         <main class="main-container">
+
+            <div class="main-container__bigSlider">
+                <div class="title-default">
+                    <h1>Акции</h1>
+                </div>
+
+                <div class="bigSlider">
+                    <div class="bigSlider--item">
+                        <img src="../img/beautiful-black-and-white-close-up-1399073.jpg" alt="">
+                    </div>
+                    <div class="bigSlider--item">
+                        <img src="../img/beautiful-black-and-white-close-up-1399073.jpg" alt="">
+                    </div>
+                    <div class="bigSlider--item">
+                        <img src="../img/black-and-white-gray-grey-1050305.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
 
             <div class="main-container__tabs">
                 <div class="title-default">
@@ -840,19 +863,141 @@
                 </div>
             </div>
 
-            <div class="main-container__slider">
-        
+            <div class="main-container__littleSlider">
+                <ul class="nav nav-slider" id="myTab" role="tablist">
+                    <li class="nav-slider-item">
+                        <a active id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                            aria-selected="true">Парикмахерские услуги</a>
+                    </li>
+                    <li class="nav-slider-item">
+                        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                            aria-selected="false">Маникюр и педикюр</a>
+                    </li>
+                    <li class="nav-slider-item">
+                        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                            aria-selected="false">Косметология</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="littleSlider">
+                            <div class="littleSlider--item">
+                                <a href="#first" class="gallery">
+                                    <img src="../img/orig.jpg" alt="">
+                                </a>
+                                <p>какой то 1</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс2</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс3</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс4</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="littleSlider">
+                            <div class="littleSlider--item">
+                                <a href="#first" class="gallery">
+                                    <img src="../img/orig.jpg" alt="">
+                                </a>
+                                <p>какой то 6</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс7</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс8</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс9</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="littleSlider">
+                            <div class="littleSlider--item">
+                                <a href="#first" class="gallery">
+                                    <img src="../img/orig.jpg" alt="">
+                                </a>
+                                <p>какой то 1111</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс2</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс3</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс4</p>
+                            </div>
+                            <div class="littleSlider--item">
+                                <img src="../img/orig.jpg" alt="">
+                                <p>какой то текс5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="first" class="Mymodal">
+                    <div class="Mymodal__title">
+                        <h2>Дмитрий Школьников</h2>
+                    </div>
+
+                    <div class="Mymodal__midle">
+                        <img src="../img/orig.jpg" alt="">
+                    </div>
+                </div>
+
             </div>
 
-            <div class="main-container__map">
-                
+            <div class="main-container__info">
+                <div class="map">
+                    <img src="../img/ymap-zam-81-5.jpg" alt="">
+                </div>
+
+                <div class="text">
+                    <div class="text--title">
+                        <h2>Мичуринсский проспект, д.16</h2>
+                        <p>Метро Ломоносовкий проспект</p>
+                    </div>
+                    <div class="text--number">
+                        <h3>+7 (495) 123-45-67</h3>
+                        <h3>+7 (495) 123-45-67</h3>
+                    </div>
+                    <div class="text--box">
+                        <img src="../img/passage-of-time.png" alt="">
+                        <p>Время работы : ежедневно: 09:00 - 22:00</p>
+                    </div>
+                </div>
             </div>
 
         </main>
 
         <footer>
             <div class="footer-container">
-                <div class="footer-container__modal">
+                <div class="footer-container__modal other">
                     <a href="#boss" class="gallery">Написать директору</a>
                     <a href="#">Отзывы</a>
                     <a href="#">Вакансии</a>
@@ -934,9 +1079,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../source/jquery.fancybox.pack.js"></script>
+
+    <script src="../slick/slick.min.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
