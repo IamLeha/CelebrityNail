@@ -33,9 +33,7 @@
         height: 100px;
         background: #fff;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex(center, center);
     }
 
     &__item--sircle img {
@@ -70,7 +68,6 @@
     }
 }
 
-
 .price-card {
     display: flex;
     flex-direction: column;
@@ -84,6 +81,7 @@
         flex-direction: column;
         padding: 4%;
         height: 40%;
+        box-shadow: 0px 8px 5px -2px #4b4747;
     }
 
     &__item--box {
@@ -151,7 +149,7 @@
 .list {
     margin: 0;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 18px;
 
     &__item {
         color: #000;
@@ -185,7 +183,6 @@
         width: 100%;
     }
 
-
     &__midle a:nth-child(4) {
         margin-top: 3%;
     }
@@ -209,12 +206,13 @@
     &__midle a:nth-child(9) {
         margin-top: 3%;
     }
-
 }
 
+.title-default img{
+    padding: 10px;
+}
 
-
-
+/*Media*/
 
 @media screen and (max-width: 1025px) {
     .main-container-bonuses {
@@ -232,11 +230,9 @@
     .bonuses-card:nth-child(3) {
         margin-top: 5%;
     }
-
 }
 
 @media screen and (max-width: 769px) {
-
 
     .advantages-card {
         @include dflex (space-between, unset);
@@ -325,7 +321,6 @@
 
     .main-container-instagram {
 
-
         &__midle {
             display: flex;
             flex-direction: column;
@@ -333,11 +328,18 @@
         }
 
         &__midle a {
-            width: 60%;
+            width: 75%;
         }
 
         &__midle a:nth-child(2) {
             margin-top: 3%;
+        }
+    }
+
+    .advantages-card {
+
+        &__item:nth-child(1) {
+            padding-top: 14px;
         }
     }
 }

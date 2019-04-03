@@ -19,15 +19,17 @@
 
     &__littleSlider {
         width: 90%;
+        @include dflex(center, unset);
         margin: 0 auto;
         background: #7d7878;
+        margin-top: 3%;
     }
 
     &__info {
         width: 90%;
         margin: 0 auto;
         margin-top: 4%;
-        @include dflex(space-between, unset);
+        display: flex;
         flex-wrap: wrap;
     }
 }
@@ -103,6 +105,7 @@
 .littleSlider {
     width: 90%;
     margin: 0 auto;
+    padding: 3% 0;
 }
 
 .littleSlider--item {
@@ -113,6 +116,10 @@
 }
 
 .littleSlider--item p {
+    text-align: center;
+}
+
+.littleSlider--item h4 {
     text-align: center;
 }
 
@@ -163,9 +170,39 @@
     }
 }
 
+.bg {
+    background-color: #7d7878;
+    @include dflex(center, unset);
+    padding: 2% 0;
+}
+
+.bottom__box-arrow-prev {
+    cursor: pointer;
+    width: 50px;
+    margin-left: 15px;
+}
+
+.bottom__box-arrow-next {
+    cursor: pointer;
+    width: 50px;
+    margin-right: 13px;
+}
+
+.arrow-prev {
+    cursor: pointer;
+    width: 40px;
+    margin-left: 15px;
+}
+
+.arrow-next {
+    cursor: pointer;
+    width: 40px;
+    margin-right: 13px;
+}
+
 .map {
-    width: 45%;
-    max-height: 300px;
+    width: 48%;
+    margin-right: 4%;
 }
 
 .map img {
@@ -174,24 +211,44 @@
 }
 
 .text {
-    width: 45%;
+    width: 48%;
     background: #7d7878;
     padding: 2%;
+
+    &__box {
+        @include dflex (unset, center);
+    }
+
+    &__box p {
+        margin-left: 2%;
+        margin-bottom: 0;
+    }
+
+    &__box img {
+        width: 35px;
+    }
+
+    &__links h3 {
+        margin-top: 12px;
+    }
+
+    &__links-link {
+        width: 100px;
+        background: #fff;
+    }
+
+    &__links-link:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    &__links-link img {
+        width: 100%;
+    }
 }
 
-.text--box {
-    @include dflex (unset, center);
+.wrap-links {
+    display: flex;
 }
-
-.text--box p {
-    margin-left: 2%;
-    margin-bottom: 0;
-}
-
-.text--box img {
-    width: 35px;
-}
-
 
 @media screen and (max-width: 1025px) {
     .img-card {
@@ -202,13 +259,20 @@
             font-size: 14px;
         }
     }
+
+    .text__title h2{
+        font-size: 28px;
+    }
+
+    .text__number h4{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 769px) {
     .img-card {
         @include dflex(space-evenly, unset);
         flex-wrap: wrap;
-
 
         &__items {
             width: 40%;
@@ -230,14 +294,31 @@
             flex-direction: column;
         }
     }
+
     .map {
         width: 100%;
     }
-    
+
     .text {
         width: 100%;
         margin-left: 0;
-        margin-top: 25%;
+        margin-top: 5%;
+    }
+
+    .bottom__box-arrow-prev {
+        display: none !important;
+    }
+
+    .bottom__box-arrow-next {
+        display: none !important;
+    }
+
+    .arrow-prev {
+        display: none !important;
+    }
+
+    .arrow-next {
+        display: none !important;
     }
 }
 
@@ -276,11 +357,12 @@
     .table td {
         font-size: 11px;
     }
-    .text{
+
+    .text {
         margin-top: 4%;
     }
 
-    .other a{
+    .other a {
         width: 100% !important;
     }
 }

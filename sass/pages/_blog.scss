@@ -1,17 +1,16 @@
 .main-container-blog {
-    padding-top: 15%;
+    padding-top: 12%;
 
     &__pagination {
-        display: flex;
+        @include dflex(center, unset);
         width: 20%;
         margin: 0 auto;
         margin-top: 2%;
     }
 
     &__pagination a {
+        @include dflex (flex-start, unset);
         margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
         padding: 8px 16px;
         text-decoration: none;
         border: 1px solid #575454;
@@ -32,14 +31,14 @@
 }
 
 .blog {
-    @include dflex(space-between, unset);
+    @include dflex(space-around, unset);
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .blog-box {
-    width: 45%;
+    width: 40%;
 
     &__img {
         width: 100%;
@@ -64,29 +63,74 @@
     }
 }
 
+.main-container-blogs {
+    width: 100%;
+    margin-bottom: -200px;
+}
+
+.blogs__img {
+    width: 100%;
+    max-height: 780px;
+}
+
+.blogs__img img {
+    width: 100%;
+    max-height: 780px;
+    margin-top: 100px;
+}
+.blogs__txt{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 14rem;
+    background: #fff;
+    color: #000;
+    padding: 2%;
+}
+
+    /*Media*/
+
 @media screen and (max-width: 1025px) {
-    .main-container {
+    .main-container-blog {
+        padding-top: 12%;
 
         &__pagination {
+            @include dflex(center, unset);
             width: 30%;
         }
     }
 }
 
 @media screen and (max-width: 769px) {
-    .main-container {
+    .main-container-blog {
+        padding-top: 12%;
 
         &__pagination {
-            width: 50%;
+            @include dflex(center, unset);
+            width: 40%;
         }
     }
 }
 
 @media screen and (max-width: 426px) {
-    .main-container {
+    .main-container-blog {
+        padding-top: 30%;
 
         &__pagination {
-            width: 100%;
+            @include dflex(center, unset);
+            width: 80%;
         }
+    }
+
+    .blog-box {
+        width: 90%;
+    }
+
+    .main-container-blogs{
+        margin-bottom: -70px;
+    }
+
+    .blogs__txt{
+        bottom: 4rem;
     }
 }

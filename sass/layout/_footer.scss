@@ -12,8 +12,7 @@ footer {
     &__modal {
         width: 36% !important;
         padding: 2% 2% 2% 0 !important;
-        display: flex;
-        justify-content: space-between;
+        @include dflex(space-between, unset);
         flex-wrap: wrap;
     }
 
@@ -26,7 +25,6 @@ footer {
         min-width: 120px;
     }
 
-
     &__modal a:nth-child(3) {
         margin-top: 20px;
     }
@@ -38,9 +36,8 @@ footer {
     &__social {
         width: 50%;
         padding: 2%;
-        display: flex;
+        @include dflex(space-between, unset);
         flex-direction: column;
-        justify-content: space-between;
         padding-left: 0;
     }
 
@@ -53,9 +50,9 @@ footer {
     }
 }
 
-.other{
-}
-.other a{
+.other {}
+
+.other a {
     width: 45% !important;
 }
 
@@ -67,9 +64,7 @@ footer {
 
     &__title {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include dflex(center, center);
     }
 
     &__title h2 {
@@ -79,6 +74,7 @@ footer {
         font-weight: 100;
         font-size: 45px;
         padding: 1%;
+        margin: 2% !important;
     }
 
     &__midle {
@@ -91,12 +87,9 @@ footer {
     }
 }
 
-
-
 form {
-    display: flex;
+    @include dflex(space-between, unset);
     flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 3%;
 }
@@ -106,8 +99,7 @@ form p {
 }
 
 .box-input {
-    display: flex;
-    justify-content: space-between;
+    @include dflex(space-between, unset);
     flex-wrap: wrap;
 }
 
@@ -139,11 +131,14 @@ input[type="button"] {
     font-weight: 300;
 }
 
+input[type="button"]:nth-child(1) {
+    margin-right: 20px;
+}
+
 .btn {
-    width: 50%;
-    display: flex;
+    width: 100%;
+    @include dflex(center, unset);
     margin-top: 20px;
-    justify-content: space-around;
 }
 
 textarea {
@@ -169,10 +164,10 @@ form input::-webkit-input-placeholder {
     padding: 0 !important;
 }
 
+/*Кнопка пульсирующас*/
+
 .pulse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dflex(center, center);
     width: 80px;
     height: 80px;
     color: #000000;
@@ -195,11 +190,12 @@ form input::-webkit-input-placeholder {
     }
 }
 
+/*Media*/
+
 @media screen and (max-width: 769px) {
     .footer-container {
-        display: flex;
+        @include dflex(unset, center);
         flex-direction: column;
-        align-items: center;
 
         &__modal {
             width: 50% !important;
@@ -207,8 +203,7 @@ form input::-webkit-input-placeholder {
         }
 
         &__social-top {
-            display: flex;
-            justify-content: center;
+            @include dflex(center, unset);
             margin-bottom: 2%;
         }
 
@@ -217,9 +212,8 @@ form input::-webkit-input-placeholder {
 
 @media screen and (max-width: 426px) {
     .footer-container {
-        display: flex;
+        @include dflex(unset, flex-start);
         flex-direction: column;
-        align-items: flex-start;
 
         &__modal {
             width: 60%;
@@ -241,8 +235,7 @@ form input::-webkit-input-placeholder {
         }
 
         &__social-top {
-            display: flex;
-            justify-content: flex-start;
+            @include dflex(flex-start, unset);
             margin-bottom: 2%;
         }
 
@@ -267,21 +260,19 @@ form input::-webkit-input-placeholder {
 
 
     textarea {
-        margin-top: 20px;
         width: 90%;
-        margin: 20px auto;
+        margin: 20px auto !important; 
     }
 
     form p {
-        width: 80%;
+        width: 90%;
         margin: -20px auto;
     }
 
     .btn {
         width: 100%;
-        display: flex;
+        @include dflex(space-around, unset);
         margin-top: 40px;
-        justify-content: space-around;
     }
 
     .boss-container__title h2 {

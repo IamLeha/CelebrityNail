@@ -11,8 +11,7 @@ header {
     width: 90%;
     margin: 0 auto;
     height: 100px;
-    display: flex;
-    align-items: center;
+    @include dflex(unset, center);
 }
 
 .box-logo {
@@ -39,10 +38,15 @@ header {
 .main-img{
     background: url(../../img/main-img.jpg)100% 75% no-repeat;
     width: 100%;
+    position: relative;
+    top: 100px;
     box-shadow: 0 3px 2px 0 #7d7878;
     height: 45.7vw;
     background-size: 100%;
+    margin-bottom: 100px;
 }
+
+/*Mobile Menu*/
 
 .nav-burger {
     width: 25px;
@@ -84,6 +88,8 @@ header {
     width: 100%;
 }
 
+    /*Media*/
+
 @media screen and (max-width: 900px) {
 
     .nav-burger {
@@ -94,7 +100,6 @@ header {
     .navbar-link {
         display: none;
     }
-
 
     .box-logo {
         width: 80%;

@@ -9,7 +9,7 @@ function Clear(){
 
 
 
-$('a[href^="#adress"]').bind('click.smoothscroll', function (e) {
+$('a[href^="#price"]').bind('click.smoothscroll', function (e) {
     e.preventDefault();
 
     document.getElementById('burger').checked = false;
