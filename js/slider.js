@@ -12,6 +12,7 @@ $(document).ready(function () {
       breakpoint: 425,
       settings: {
         arrows: false,
+        autoplay: true,
       }
     }, ]
   });
@@ -30,6 +31,7 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           arrows: false,
+          autoplay: true,
         }
       },
       {
@@ -37,7 +39,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          autoplay: true,
         }
       },
       {
@@ -45,7 +48,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          autoplay: true,
         }
       }
     ]
