@@ -787,14 +787,15 @@ header {
   .price-card {
     margin: 0 auto; }
     .price-card__item {
-      width: 90%; }
+      width: 90%;
+      margin: 0 auto; }
     .price-card__item--title h2 {
       font-size: 23px; }
   .main-container-bonuses--midle {
     display: flex;
     flex-direction: column; }
   .bonuses-card {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
   .bonuses-card:nth-child(2) {
     margin-top: 5%; }
@@ -953,6 +954,9 @@ header {
 
 .main-container__comment {
   width: 100%; }
+
+.mt {
+  margin-top: 99px; }
 
 .head {
   display: -webkit-box;
