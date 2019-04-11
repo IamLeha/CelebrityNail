@@ -1,7 +1,8 @@
 .main-img-studia {
     background: url(../img/main-img.jpg)100% 75% no-repeat;
     width: 100%;
-    box-shadow: 0 3px 2px 0 #7d7878;
+    -webkit-box-shadow: 0 3px 2px 0 #7d7878;
+            box-shadow: 0 3px 2px 0 #7d7878;
     height: 30.7vw;
     min-height: 200px;
     background-size: 100%;
@@ -29,8 +30,11 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 4%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 
@@ -69,6 +73,8 @@
 .txt-link {
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #000;
 }
@@ -110,9 +116,16 @@
 
 .littleSlider--item {
     min-height: 200px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .littleSlider--item p {
@@ -133,8 +146,11 @@
 .nav-slider {
     width: 80%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .nav-slider-item {
@@ -145,8 +161,13 @@
 
 .Mymodal {
     max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
 
     &__title {
@@ -247,6 +268,8 @@
 }
 
 .wrap-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -274,7 +297,8 @@
 @media screen and (max-width: 769px) {
     .img-card {
         @include dflex(space-evenly, unset);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__items {
             width: 40%;
@@ -292,8 +316,13 @@
 
     .main-container {
         &__info {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
     }
 

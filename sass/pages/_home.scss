@@ -13,7 +13,8 @@
 
 .advantages-card {
     @include dflex(space-between, unset);
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 3%;
 
     &__item {
@@ -55,6 +56,7 @@
 
 .gradient {
     @include dflex (flex-end, unset);
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(1%, #2b2929), to(#00000000));
     background-image: linear-gradient(-90deg, #2b2929 1%, #00000000)
 }
 
@@ -69,19 +71,30 @@
 }
 
 .price-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-right: 15%;
 
     &__item {
         background: #4b4747b9;
         width: 100%;
         @include dflex (space-between, unset);
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 4%;
         height: 40%;
-        box-shadow: 0px 8px 5px -2px #4b4747;
+        -webkit-box-shadow: 0px 8px 5px -2px #4b4747;
+                box-shadow: 0px 8px 5px -2px #4b4747;
     }
 
     &__item--box {
@@ -106,9 +119,16 @@
 }
 
 .price--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 7%;
 }
 
@@ -122,7 +142,8 @@
         width: 90%;
         margin: 0 auto;
         @include dflex (space-between, unset);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 
@@ -167,7 +188,8 @@
 
     &__midle {
         @include dflex (space-around, unset);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     &__midle a {
@@ -266,13 +288,23 @@
 
 @media screen and (max-width: 426px) {
     .advantages-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         &__item {
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
 
         &__item p {
@@ -306,8 +338,13 @@
     .main-container-bonuses {
 
         &--midle {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
     }
 
@@ -323,9 +360,16 @@
     .main-container-instagram {
 
         &__midle {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
         }
 
         &__midle a {

@@ -32,7 +32,8 @@
 
 .blog {
     @include dflex(space-around, unset);
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
 }

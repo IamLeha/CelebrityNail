@@ -4,7 +4,8 @@ header {
     top: 0;
     background: #000;
     z-index: 5;
-    box-shadow: 0 0 15px #000;
+    -webkit-box-shadow: 0 0 15px #000;
+            box-shadow: 0 0 15px #000;
 }
 
 .header-container {
@@ -30,6 +31,8 @@ header {
 }
 
 .navbar-link {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
     font-size: 16px;
@@ -40,7 +43,8 @@ header {
     width: 100%;
     position: relative;
     top: 100px;
-    box-shadow: 0 3px 2px 0 #7d7878;
+    -webkit-box-shadow: 0 3px 2px 0 #7d7878;
+            box-shadow: 0 3px 2px 0 #7d7878;
     height: 45.7vw;
     background-size: 100%;
     margin-bottom: 100px;
@@ -78,8 +82,13 @@ header {
 }
 
 .nav-burger__checkbox:checked~.box-navbar__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     top: 100px;
     height: calc(100vh - 100px);
@@ -116,8 +125,13 @@ header {
 @media screen and (max-width: 425px) {
 
     .nav-burger__checkbox:checked~.box-navbar__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         position: absolute;
         top: 100px;
         height: calc(100vh - 100px);

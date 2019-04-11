@@ -44,6 +44,8 @@
 
     &__right--name h3 {
         margin: 0;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
         background: #575454a8;
         padding: 3px 6px;
@@ -71,7 +73,8 @@
     border-width: 10px 70px 10px 0;
     border-color: transparent #2C2C2C transparent transparent;
     border-style: solid;
-    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
     position: relative;
     top: -18px;
     right: 51px;
@@ -79,13 +82,17 @@
 
 .addReview {
     margin-right: 20px;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
     width: max-content !important;
     padding: 8px 10px;
     font-size: 18px;
     color: #2c2c2c;
     border-radius: 25px;
     border: none;
-    box-shadow: 0px 2px 7px #a4a3a3;
+    -webkit-box-shadow: 0px 2px 7px #a4a3a3;
+            box-shadow: 0px 2px 7px #a4a3a3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, #e2e2e2), color-stop(41%, #f3f3f3), color-stop(57%, #f3f3f3), to(#c1c1c1));
     background: linear-gradient(to bottom, #e2e2e2 17%, #f3f3f3 41%, #f3f3f3 57%, #c1c1c1 100%);
     cursor: pointer;
     font-weight: 300;
@@ -103,10 +110,14 @@
 }
 
 .item-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .btn-review {
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
     width: max-content !important;
     margin-top: -15px;
 }
@@ -128,6 +139,8 @@
 
 @media screen and (max-width:1025px) {
     .addReview {
+        width: -webkit-max-content !important;
+        width: -moz-max-content !important;
         width: max-content !important;
     }
 
@@ -140,6 +153,8 @@
 
 @media screen and (max-width:769px) {
     .addReview {
+        width: -webkit-max-content !important;
+        width: -moz-max-content !important;
         width: max-content !important;
     }
 
@@ -152,7 +167,8 @@
 
     .head {
         @include dflex(space-between, center);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__title {
             width: 100%;
@@ -181,7 +197,10 @@
 
     .form-block {
         @include dflex (unset, center);
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .btn-review{
         margin-top: 25px;

@@ -1,18 +1,22 @@
 footer {
     width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#393939));
     background: linear-gradient(to top, #000, #393939);
 }
 .footer-container {
     width: 90%;
     margin: 0 auto;
     margin-top: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     &__modal {
         width: 36% !important;
         padding: 2% 2% 2% 0 !important;
         @include dflex(space-between, unset);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     &__modal a {
@@ -36,7 +40,10 @@ footer {
         width: 50%;
         padding: 2%;
         @include dflex(space-between, unset);
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 0;
     }
 
@@ -57,8 +64,13 @@ footer {
 
 .boss-container {
     max-width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
 
     &__title {
@@ -88,8 +100,12 @@ footer {
 
 form {
     @include dflex(space-between, unset);
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 3%;
 }
 
@@ -99,7 +115,8 @@ form p {
 
 .box-input {
     @include dflex(space-between, unset);
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 input[type="text"] {
@@ -124,7 +141,9 @@ input[type="button"] {
     color: #2c2c2c;
     border-radius: 25px;
     border: none;
-    box-shadow: 0px 2px 7px #a4a3a3;
+    -webkit-box-shadow: 0px 2px 7px #a4a3a3;
+            box-shadow: 0px 2px 7px #a4a3a3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, #e2e2e2), color-stop(41%, #f3f3f3), color-stop(57%, #f3f3f3), to(#c1c1c1));
     background: linear-gradient(to bottom, #e2e2e2 17%, #f3f3f3 41%, #f3f3f3 57%, #c1c1c1 100%);
     cursor: pointer;
     font-weight: 300;
@@ -172,20 +191,35 @@ form input::-webkit-input-placeholder {
     color: #000000;
     background: #1c84c6;
     border-radius: 50%;
-    animation: radial-pulse 1.2s infinite;
+    -webkit-animation: radial-pulse 1.2s infinite;
+            animation: radial-pulse 1.2s infinite;
     text-align: center;
     position: fixed;
     bottom: 3%;
     right: 6%;
 }
 
-@keyframes radial-pulse {
+@-webkit-keyframes radial-pulse {
     0% {
-        box-shadow: 0 0 0 0px #1c84c680;
+        -webkit-box-shadow: 0 0 0 0px #1c84c680;
+                box-shadow: 0 0 0 0px #1c84c680;
     }
 
     100% {
-        box-shadow: 0 0 0 40px #00000000;
+        -webkit-box-shadow: 0 0 0 40px #00000000;
+                box-shadow: 0 0 0 40px #00000000;
+    }
+}
+
+@keyframes radial-pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px #1c84c680;
+                box-shadow: 0 0 0 0px #1c84c680;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 40px #00000000;
+                box-shadow: 0 0 0 40px #00000000;
     }
 }
 
@@ -194,7 +228,10 @@ form input::-webkit-input-placeholder {
 @media screen and (max-width: 769px) {
     .footer-container {
         @include dflex(unset, center);
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         &__modal {
             width: 50% !important;
@@ -212,7 +249,10 @@ form input::-webkit-input-placeholder {
 @media screen and (max-width: 426px) {
     .footer-container {
         @include dflex(unset, flex-start);
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         &__modal {
             width: 60%;
@@ -244,8 +284,13 @@ form input::-webkit-input-placeholder {
     }
 
     .box-input {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     input[type="text"]:nth-child(2) {
