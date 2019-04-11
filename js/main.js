@@ -7,9 +7,7 @@ function Clear(){
     document.getElementById('Myform1').reset();
 }
 
-
-
-$('a[href^="#price"]').bind('click.smoothscroll', function (e) {
+$('a[href^="#adresss"]').bind('click.smoothscroll', function (e) {
     e.preventDefault();
 
     document.getElementById('burger').checked = false;

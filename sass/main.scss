@@ -1,13 +1,13 @@
-@import 'vendors/mixin';
-@import 'base/color';
-@import 'base/normalize';
-@import 'base/typography';
+@import 'vendors/mixin';    //миксин 
+@import 'base/color';       //цвета
+@import 'base/normalize';   //нормалайз
+@import 'base/typography';  //шрифты
 
-@import 'layout/footer';
-@import 'layout/header';
+@import 'layout/footer';    //футер
+@import 'layout/header';    //хеадер
 
-@import 'pages/home.scss';
-@import 'pages/blog';
-@import 'pages/comments';
-@import 'pages/studia';
+@import 'pages/home.scss'; //главная страниа
+@import 'pages/blog';       //страница блог
+@import 'pages/comments';   //страница отзывов
+@import 'pages/studia';     //странциа студий
 

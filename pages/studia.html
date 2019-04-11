@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
+    <!--Шрифт-->
     <link rel="stylesheet" href="../font/museosanscyrl.css">
+    <!--Модальные окна css-->
     <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
-
+    <!--Bootstrap css-->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-
-
+    <!--Слайдер css-->
     <link rel="stylesheet" href="../slick/slick.css">
+    <!--Слайдер css-->
     <link rel="stylesheet" href="../slick/slick-theme.css">
 
-    <title>Selebrity nail</title>
+    <title>Studia</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <!--Header начало-->
         <header>
             <div class="header-container">
                 <div class="box-logo">
@@ -41,11 +45,13 @@
                 </div>
             </div>
         </header>
+        <!--Header конец-->
 
         <div class="main-img-studia"></div>
 
+        <!--Main начало-->
         <main class="main-container">
-
+            <!--Главный большой слайдер начало-->
             <div class="main-container__bigSlider">
                 <div class="title-default">
                     <h1>Акции</h1>
@@ -63,18 +69,18 @@
                         <div class="bigSlider--item">
                             <img src="../img/black-and-white-gray-grey-1050305.jpg" alt="">
                         </div>
-
                     </div>
-
                     <img src="../img/arrow-next.svg" class="bottom__box-arrow-next">
                 </div>
-
             </div>
+            <!--Главный большой слайдер конец-->
 
+            <!--Начало блока табы (компонент Bootstrap)-->
             <div class="main-container__tabs">
                 <div class="title-default">
                     <h1>Наши цены</h1>
                 </div>
+                <!--Табы картинки начало-->
                 <ul class="nav mb-3 img-card" id="pills-tab" role="tablist">
                     <li class="nav-item img-card__items">
                         <a class="nav-link active img-card__item" id="pills-home-tab" data-toggle="pill"
@@ -106,7 +112,10 @@
                         </a>
                     </li>
                 </ul>
+                <!--Табы картинки конец-->
+
                 <div class="tab-content" id="pills-tabContent">
+                    <!--Начало подтаба парихмахерские услуги-->
                     <div class="tab-pane fade show active" id="hairdresser-services" role="tabpanel"
                         aria-labelledby="pills-home-tab">
 
@@ -371,9 +380,10 @@
                                 </table>
                             </div>
                         </div>
-
                     </div>
+                    <!--Конец подтаба парихмахерские услуги-->
 
+                    <!--Начало подтаба маникюри педикюр-->
                     <div class="tab-pane fade" id="manicure-pedicure" role="tabpanel"
                         aria-labelledby="pills-profile-tab">
                         <nav>
@@ -567,7 +577,9 @@
                             </div>
                         </div>
                     </div>
+                    <!--Начало подтаба маникюри педикюр-->
 
+                    <!--Начало подтаба косметология-->
                     <div class="tab-pane fade" id="cosmetology" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <nav>
                             <div class="nav txt-link" id="nav-tab" role="tablist">
@@ -831,6 +843,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Конец подтаба косметология-->
 
                     <div class="tab-pane fade" id="makeup" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <nav>
@@ -868,9 +881,11 @@
                     </div>
                 </div>
             </div>
+            <!--Конец блока табы (компонент Bootstrap)-->
 
+            <!--Начало маленького слайдера-->
             <div class="main-container__littleSlider">
-                    <img src="../img/arrow-prev.svg" class="arrow-prev">
+                <img src="../img/arrow-prev.svg" class="arrow-prev">
                 <div class="littleSlider">
                     <div class="littleSlider--item">
                         <a href="#first" class="gallery">
@@ -946,8 +961,8 @@
                         <img src="../img/orig.jpg" alt="">
                     </div>
                 </div>
-
             </div>
+            <!--Конец маленького слайдера-->
 
             <div class="main-container__info">
                 <div class="map">
@@ -1069,13 +1084,17 @@
         </footer>
     </div>
 
-
+    <!--jquery-->
     <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <!--Модальные окна JS-->
     <script type="text/javascript" src="../source/jquery.fancybox.pack.js"></script>
+    <!--Bootstrap-->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../source/jquery.fancybox.pack.js"></script>
+    <!--Слайдер JS-->
     <script src="../slick/slick.min.js"></script>
+    <!--My js for slider-->
     <script src="../js/slider.js"></script>
+    <!--My JS-->
     <script src="../js/main.js"></script>
 </body>
 

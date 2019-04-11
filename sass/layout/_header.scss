@@ -71,7 +71,7 @@ header {
 .nav-burger__checkbox:checked~.box-navbar__links a{
     @include dflex(center, center);
     font-size: 18px;
-    width: 100%;
+    width: 100% ;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     height: 17%;
@@ -126,7 +126,9 @@ header {
     }
 }
 
-@media screen and (max-width: 820px) and (max-height: 380px){
+    /*Для вертикального меню*/
+
+@media screen and (max-width: 825px) and (max-height: 420px){
 
     header{
         position: absolute;

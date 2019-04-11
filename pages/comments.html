@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Шрифт -->
     <link rel="stylesheet" href="../font/museosanscyrl.css">
+    <!-- Модальные окна -->
     <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
-    <title>Selebrity nail</title>
+    <title>Reviews</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <!--Header начало-->
         <header>
             <div class="header-container">
                 <div class="box-logo">
@@ -34,7 +38,9 @@
                 </div>
             </div>
         </header>
+        <!--Header конец-->
 
+        <!--Main начало-->
         <main class="main-container mt">
             <div class="main-container__title">
                 <div class="head">
@@ -47,6 +53,7 @@
                 </div>
             </div>
 
+            <!--Начало блока отзывы-->
             <div class="main-container__comment">
                 <div class="card-comment">
                     <div class="item-comment">
@@ -66,6 +73,7 @@
                                     dolorem?
                                     lorem
                                 </p>
+                                <!-- Треугольник -->
                                 <div class="triangle"></div>
                             </div>
                         </div>
@@ -175,13 +183,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <!--Конец блока отзывы-->
 
-
-
-
+            <!--Начало формы оставить отзыв-->
             <div id="forma" class="boss-container myWidth">
                 <div class="boss-container__title">
                     <h2>Написать отзыв</h2>
@@ -210,40 +216,9 @@
                     </form>
                 </div>
             </div>
+            <!--Конец формы оставить отзыв-->
 
-
-
-
-            <div id="" class="boss-container">
-                <div class="boss-container__title">
-                    <h2>Форма обратной связи</h2>
-                </div>
-
-                <div class="boss-container__midle">
-                    <form id="Myform">
-                        <div class="box-input block-input">
-                            <input type="text" placeholder="Имя*">
-                            <input type="text" placeholder="Фамилия*">
-                        </div>
-
-                        <textarea placeholder="Сообщение"></textarea>
-                        <div class="form-block">
-                            <p>*-поля, обязательные для заполнения</p>
-                            <input class="download" type="button" value="Загрузить фото">
-                        </div>
-                        <div class="captcha">
-                            dsfsdfsdf
-                        </div>
-
-                        <div class="btn">
-                            <input onclick="Clear()" type="button" value="Очистить">
-                            <input type="button" value="Отправить">
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
+            <!--Пагинация-->
             <div class="main-container-blog__pagination">
                 <a href="#">&laquo;</a>
                 <a href="#">1</a>
@@ -251,9 +226,10 @@
                 <a href="#">3</a>
                 <a href="#">&raquo;</a>
             </div>
-
         </main>
+        <!--Main конец-->
 
+        <!--Footer начало-->
         <footer>
             <div class="footer-container">
                 <div class="footer-container__modal">
@@ -262,6 +238,7 @@
                     <a href="#">Вакансии</a>
                     <a href="#feedback" class="gallery">Обратная связь</a>
 
+                    <!--Начало формы написать директору-->
                     <div id="boss" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Написать директору</h2>
@@ -286,7 +263,9 @@
                             </form>
                         </div>
                     </div>
+                    <!--Конец формы написать директору-->
 
+                    <!--Начало формы обратная связь-->
                     <div id="feedback" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Форма обратной связи</h2>
@@ -311,7 +290,7 @@
                             </form>
                         </div>
                     </div>
-
+                    <!--Конец формы обратная связь-->
                 </div>
 
                 <div class="footer-container__social">
@@ -326,6 +305,7 @@
                     </div>
                 </div>
 
+                <!--Место для виджета-->
                 <div class="footer-container__btn">
                     <div class="pulse">Online-запись</div>
                 </div>
@@ -333,9 +313,11 @@
         </footer>
     </div>
 
+    <!--jquery-->
     <script src="../jquery/jquery-3.3.1.min.js"></script>
-
+    <!--Модальные окна js-->
     <script type="text/javascript" src="../source/jquery.fancybox.pack.js"></script>
+    <!--My JS-->
     <script src="../js/main.js"></script>
 </body>
 

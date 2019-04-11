@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
+    <!--Шрифт-->
     <link rel="stylesheet" href="font/museosanscyrl.css">
+    <!--Модальные окна-->
     <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />
     <title>Selebrity nail</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="testing">
+        <!--Header начало-->
+        <header>
             <div class="header-container">
                 <div class="box-logo">
                     <a class="box-logo--link" href="index.html"><img src="img/лого.png" alt="Logo"></a>
@@ -24,9 +28,9 @@
                     <input class="nav-burger__checkbox" type="checkbox" id="burger">
 
                     <div class="box-navbar__links">
-                        <a class="navbar-link" href="#price">Студии</a>
-                        <a class="navbar-link" href="#price">Цены</a>
-                        <a class="navbar-link" href="#price">Акции</a>
+                        <a class="navbar-link" href="#adress">Студии</a>
+                        <a class="navbar-link" href="#adress">Цены</a>
+                        <a class="navbar-link" href="#adress">Акции</a>
                         <a class="navbar-link" href="#bonuses">Бонусная программа</a>
                         <a class="navbar-link" href="#instagram">Instagram</a>
                         <a class="navbar-link" href="pages/blog.html">Блог</a>
@@ -34,10 +38,13 @@
                 </div>
             </div>
         </header>
+        <!-- Header конец-->
 
         <div class="main-img"></div>
 
+        <!--Main начало-->
         <main class="main-container">
+            <!--Блок преимущества начало-->
             <div class="main-container__advantages">
                 <div class="title-default">
                     <h1>Наши преимущества</h1>
@@ -85,8 +92,10 @@
                     </div>
                 </div>
             </div>
+            <!--Блок преимущества конец-->
 
-            <div class="main-container-price" id="price">
+            <!--Блок адреса начало-->
+            <div class="main-container-price" id="adress">
                 <div class="title-default">
                     <h1>Адреса салонов</h1>
                 </div>
@@ -130,7 +139,9 @@
                     </div>
                 </div>
             </div>
+            <!--Блок адреса конец-->
 
+            <!--Блок бонусы начало-->
             <div class="main-container-bonuses" id="bonuses">
                 <div class="title-default">
                     <h1>Бонусная программа</h1>
@@ -191,9 +202,9 @@
                     </div>
                 </div>
             </div>
+            <!--Блок бонусы конец-->
 
-
-
+            <!--Блок инстаграм начало-->
             <div class="main-container-instagram" id="instagram">
                 <div class="title-default">
                     <img src="img/instagram (1).png" alt="">
@@ -229,8 +240,11 @@
                     </a>
                 </div>
             </div>
+            <!--Блок инстаграм конец-->
         </main>
+        <!--Main конец-->
 
+        <!--Footer начало-->
         <footer>
             <div class="footer-container">
                 <div class="footer-container__modal">
@@ -239,6 +253,7 @@
                     <a href="#">Вакансии</a>
                     <a href="#feedback" class="gallery">Обратная связь</a>
 
+                    <!--Начало формы написать директору-->
                     <div id="boss" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Написать директору</h2>
@@ -263,7 +278,9 @@
                             </form>
                         </div>
                     </div>
+                    <!--Конец формы написать директору-->
 
+                    <!--Начало формы обратная связь-->
                     <div id="feedback" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Форма обратной связи</h2>
@@ -288,7 +305,7 @@
                             </form>
                         </div>
                     </div>
-
+                    <!--Конец формы обратная связь-->
                 </div>
 
                 <div class="footer-container__social">
@@ -302,17 +319,20 @@
                         <p>Разработка сайта <a href="https://d-partners.ru">Digital-агентство D-Partners</a></p>
                     </div>
                 </div>
-
+                <!--Место для виджита-->
                 <div class="footer-container__btn">
                     <div class="pulse">Online-запись</div>
                 </div>
             </div>
         </footer>
+        <!--Footer конец-->
     </div>
 
+    <!--jquery-->
     <script src="jquery/jquery-3.3.1.min.js"></script>
-
+    <!--Модальные окна js-->
     <script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+    <!--My js-->
     <script src="js/main.js"></script>
 </body>
 
