@@ -1,4 +1,5 @@
 $(".gallery").fancybox({
+    closeEffect: 'elastic',
     openEffect: 'elastic'
 });
 
