@@ -721,14 +721,14 @@ header {
   -ms-flex-align: unset;
   align-items: unset;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(1%, #2b2929), to(#00000000));
-  background-image: linear-gradient(-90deg, #2b2929 30%, #00000000); }
+  background-image: linear-gradient(-90deg, #2b2929 60%, #00000000); }
 
 .main-container-price {
   width: 100%; }
   .main-container-price__midle {
     width: 100%;
     background: url(../img/beautiful-black-and-white-close-up-1399073.jpg) no-repeat;
-    background-size: cover; }
+    background-size: contain; }
 
 .price-card {
   display: -webkit-box;
@@ -1680,12 +1680,15 @@ header {
 .arrow-prev {
   cursor: pointer;
   width: 40px;
-  margin-left: 15px; }
+  margin-left: 25px;
+  position: absolute; }
 
 .arrow-next {
   cursor: pointer;
   width: 40px;
-  margin-right: 13px; }
+  margin-right: 23px;
+  position: absolute;
+  right: 0; }
 
 .map {
   width: 48%;

@@ -58,7 +58,7 @@
 .gradient {
     @include dflex (flex-end, unset);
     background-image: -webkit-gradient(linear, right top, left top, color-stop(1%, #2b2929), to(#00000000));
-    background-image: linear-gradient(-90deg, #2b2929 30%, #00000000)
+    background-image: linear-gradient(-90deg, #2b2929 60%, #00000000)
 }
 
 .main-container-price {
@@ -67,7 +67,7 @@
     &__midle {
         width: 100%;
         background: url(../img/beautiful-black-and-white-close-up-1399073.jpg) no-repeat;
-        background-size: cover;
+        background-size: contain;
 
     }
 }
