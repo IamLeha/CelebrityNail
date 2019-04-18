@@ -4,17 +4,17 @@ footer {
     background: linear-gradient(to top, #000, #393939);
 }
 .footer-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 4%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    @include dflex(center, unset);
 
     &__modal {
-        width: 36% !important;
+        width: 60% !important;
         padding: 2% 2% 2% 0 !important;
-        @include dflex(space-between, unset);
+        @include dflex(flex-end, unset);
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
@@ -28,6 +28,10 @@ footer {
         min-width: 120px;
     }
 
+    &__modal a:nth-child(odd){
+        margin-right: 10%;
+    }
+
     &__modal a:nth-child(3) {
         margin-top: 20px;
     }
@@ -37,7 +41,7 @@ footer {
     }
 
     &__social {
-        width: 50%;
+        width: 40%;
         padding: 2%;
         @include dflex(space-between, unset);
         -webkit-box-orient: vertical;
@@ -47,8 +51,17 @@ footer {
         padding-left: 0;
     }
 
+    &__social-bottom{
+        @include dflex(flex-start, center);
+    }
+
     &__social img {
         width: 35px;
+    }
+
+    &__social p {
+        margin: 0;
+        margin-left: 10px;
     }
 
     &__social a:not(:first-child) {
@@ -234,8 +247,12 @@ form input::-webkit-input-placeholder {
                 flex-direction: column;
 
         &__modal {
-            width: 50% !important;
+            width: 70% !important;
             padding: 2%;
+            @include dflex(center, unset);
+        }
+        &__social {
+            width: 70%;
         }
 
         &__social-top {
@@ -243,6 +260,9 @@ form input::-webkit-input-placeholder {
             margin-bottom: 2%;
         }
 
+        &__social-bottom{
+            @include dflex(center, center);
+        }
     }
 }
 
@@ -269,8 +289,16 @@ form input::-webkit-input-placeholder {
             margin-left: 4%;
         }
 
-        &__social p {
-            font-size: 10px;
+        &__social-bottom{
+            @include dflex(flex-start, unset)
+        }
+
+        &__social-bottom img{
+            display: none;
+        }
+
+        &__social-bottom p{
+            margin: 0;
         }
 
         &__social-top {
@@ -280,6 +308,10 @@ form input::-webkit-input-placeholder {
 
         &__modal a:nth-child(2) {
             margin-top: 20px;
+        }
+
+        &__modal a:nth-child(odd){
+            margin-right: 0;
         }
     }
 

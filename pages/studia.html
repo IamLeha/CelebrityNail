@@ -27,7 +27,7 @@
         <header>
             <div class="header-container">
                 <div class="box-logo">
-                    <a class="box-logo--link" href="../index.html"><img src="../img/лого.png" alt="Logo"></a>
+                    <a class="box-logo--link" href="../index.html"><img src="../img/logo.svg" alt="Logo"></a>
                 </div>
 
                 <div class="box-navbar">
@@ -36,8 +36,6 @@
 
                     <div class="box-navbar__links">
                         <a class="navbar-link" href="../index.html#adress">Студии</a>
-                        <a class="navbar-link" href="../index.html#adress">Цены</a>
-                        <a class="navbar-link" href="../index.html#adress">Акции</a>
                         <a class="navbar-link" href="../index.html#bonuses">Бонусная программа</a>
                         <a class="navbar-link" href="../index.html#instagram">Instagram</a>
                         <a class="navbar-link" href="blog.html">Блог</a>
@@ -884,9 +882,146 @@
             <!--Конец блока табы (компонент Bootstrap)-->
 
             <!--Начало маленького слайдера-->
+
             <div class="main-container__littleSlider">
+                <div class="toggles container">
+                    <ul class="filter clearfix">
+                        <li data-filter="hairmaster" class="hairmaster">Парикмахеры <span> |</span></li>
+                        <li data-filter="manicure-pedicure" class="manicure-pedicure">Маникюристы и педикюритсы <span> |</span></li>
+                        <li data-filter="cosmetologist" class="cosmetologist">Косметологи <span> |</span></li>
+                        <li data-filter="browup" class="browup">Брови</li>
+                    </ul>
+                </div>
+
+                <div class="little-slider__container container">
+                    <div class="littleSlider container">
+                        <div class="littleSlider--item hairmaster">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то п</p>
+                        </div>
+                        <div class="littleSlider--item hairmaster">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то мп</p>
+                        </div>
+                        <div class="littleSlider--item manicure-pedicure">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то б</p>
+                        </div>
+                        <div class="littleSlider--item manicure-pedicure">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то к</p>
+                        </div>
+                        <div class="littleSlider--item cosmetologist">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то текс к</p>
+                        </div>
+                        <div class="littleSlider--item cosmetologist">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то текс мп</p>
+                        </div>
+                        <div class="littleSlider--item hairmaster">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то текс п</p>
+                        </div>
+                        <div class="littleSlider--item browup">
+                            <a href="#first" class="gallery">
+                                <img src="../img/orig.jpg" alt="">
+                            </a>
+                            <h4>Дмитрий Дмитрий</h4>
+                            <p>какой то текс б</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="first" class="Mymodal">
+                    <div class="Mymodal__title">
+                        <h2>Дмитрий Школьников</h2>
+                    </div>
+
+                    <div class="Mymodal__midle">
+                        <img src="../img/orig.jpg" alt="">
+                    </div>
+                </div>
+                <div id="first" class="Mymodal">
+                    <div class="Mymodal__title">
+                        <h2>Дмитрий Школьников</h2>
+                    </div>
+
+                    <div class="Mymodal__midle">
+                        <img src="../img/orig.jpg" alt="">
+                    </div>
+                </div>
+                <div id="first" class="Mymodal">
+                    <div class="Mymodal__title">
+                        <h2>Дмитрий Школьников</h2>
+                    </div>
+
+                    <div class="Mymodal__midle">
+                        <img src="../img/orig.jpg" alt="">
+                    </div>
+                </div>
+                <div id="first" class="Mymodal">
+                    <div class="Mymodal__title">
+                        <h2>Дмитрий Школьников</h2>
+                    </div>
+
+                    <div class="Mymodal__midle">
+                        <img src="../img/orig.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="main-container__littleSlider">
+                <div class="toggles">
+                    <button id="showall">SHOW ALL</button>
+                    <button id="webdev">WEB DEVELOPMENT</button>
+                    <button id="webdesign">WEB DESIGN</button>
+                    <button id="graphd">GRAPHIC</button>
+                </div>
+
                 <img src="../img/arrow-prev.svg" class="arrow-prev">
-                <div class="littleSlider">
+                <div class="littleSlider container">
+                    <div class="littleSlider--item">
+                        <a href="#first" class="gallery">
+                            <img src="../img/orig.jpg" alt="">
+                        </a>
+                        <h4>Дмитрий Дмитрий</h4>
+                        <p>какой то 1</p>
+                    </div>
+                    <div class="littleSlider--item">
+                        <a href="#first" class="gallery">
+                            <img src="../img/orig.jpg" alt="">
+                        </a>
+                        <h4>Дмитрий Дмитрий</h4>
+                        <p>какой то 1</p>
+                    </div>
+                    <div class="littleSlider--item">
+                        <a href="#first" class="gallery">
+                            <img src="../img/orig.jpg" alt="">
+                        </a>
+                        <h4>Дмитрий Дмитрий</h4>
+                        <p>какой то 1</p>
+                    </div>
                     <div class="littleSlider--item">
                         <a href="#first" class="gallery">
                             <img src="../img/orig.jpg" alt="">
@@ -961,7 +1096,7 @@
                         <img src="../img/orig.jpg" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--Конец маленького слайдера-->
 
             <div class="main-container__info">
@@ -979,7 +1114,7 @@
                         <h4>+7 (495) 123-45-67</h4>
                     </div>
                     <div class="text__box">
-                        <img src="../img/passage-of-time.png" alt="">
+                        <img src="../img/passage-of-time.svg" alt="">
                         <p>Время работы : ежедневно: 09:00 - 22:00</p>
                     </div>
                     <div class="text__links">
@@ -1006,20 +1141,21 @@
         </main>
 
         <footer>
-            <div class="footer-container">
-                <div class="footer-container__modal other">
+            <div class="footer-container container">
+                <div class="footer-container__modal">
                     <a href="#boss" class="gallery">Написать директору</a>
-                    <a href="../pages/comments.html">Отзывы</a>
+                    <a href="pages/comments.html">Отзывы</a>
                     <a href="#">Вакансии</a>
                     <a href="#feedback" class="gallery">Обратная связь</a>
 
+                    <!--Начало формы написать директору-->
                     <div id="boss" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Написать директору</h2>
                         </div>
 
                         <div class="boss-container__midle">
-                            <form id="Myform1s">
+                            <form id="Myform1">
                                 <div class="box-input">
                                     <input type="text" placeholder="Имя*">
                                     <input type="text" placeholder="Фамилия*">
@@ -1037,7 +1173,9 @@
                             </form>
                         </div>
                     </div>
+                    <!--Конец формы написать директору-->
 
+                    <!--Начало формы обратная связь-->
                     <div id="feedback" class="boss-container">
                         <div class="boss-container__title">
                             <h2>Форма обратной связи</h2>
@@ -1062,7 +1200,7 @@
                             </form>
                         </div>
                     </div>
-
+                    <!--Конец формы обратная связь-->
                 </div>
 
                 <div class="footer-container__social">
@@ -1073,13 +1211,11 @@
                                 src="../img/soc33.png" alt=""></a>
                     </div>
                     <div class="footer-container__social-bottom">
-                        <p>Разработка сайта <a href="https://d-partners.ru">Digital-агентство D-Partners</a></p>
+                        <img src="../img/contact.svg" alt="">
+                        <p>какойтоемаил@mail.ru</p>
                     </div>
                 </div>
-
-                <div class="footer-container__btn">
-                    <div class="pulse">Online-запись</div>
-                </div>
+                <!--Место для виджита-->
             </div>
         </footer>
     </div>
@@ -1096,6 +1232,8 @@
     <script src="../js/slider.js"></script>
     <!--My JS-->
     <script src="../js/main.js"></script>
+
+    <script src="../../IamLeha.github.io-master/IamLeha.github.io-master/js/script.js"></script>
 </body>
 
 </html>

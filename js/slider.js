@@ -17,14 +17,14 @@ $('.bigSlider').slick({
 
 $('.littleSlider').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
   prevArrow: $('.arrow-prev'),
   nextArrow: $('.arrow-next'),
   responsive: [{
-      breakpoint: 1024,
+      breakpoint: 1025,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -52,3 +52,24 @@ $('.littleSlider').slick({
     }
   ]
 });
+
+
+$(".filter li").on('click', function(){
+  var filter = $(this).data('filter');
+  $(".littleSlider").slick('slickUnfilter');
+  
+  if(filter == 'hairmaster'){
+    $(".littleSlider").slick('slickFilter','.hairmaster');
+  }
+  else if(filter == 'manicure-pedicure'){
+    $(".littleSlider").slick('slickFilter','.manicure-pedicure');
+  }
+  else if(filter == 'cosmetologist'){
+    $(".littleSlider").slick('slickFilter','.cosmetologist');
+  }
+  else if(filter == 'browup'){
+    
+    $(".littleSlider").slick('slickFilter','.browup');
+  }
+  
+})

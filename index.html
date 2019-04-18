@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <!--Шрифт-->
     <link rel="stylesheet" href="font/museosanscyrl.css">
     <!--Модальные окна-->
     <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />
-    <title>Selebrity nail</title>
+    <title>Celebrity nail</title>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <header>
             <div class="header-container">
                 <div class="box-logo">
-                    <a class="box-logo--link" href="index.html"><img src="img/лого.png" alt="Logo"></a>
+                    <a class="box-logo--link" href="index.html"><img src="img/logo.svg" alt="Logo"></a>
                 </div>
 
                 <div class="box-navbar">
@@ -29,8 +31,6 @@
 
                     <div class="box-navbar__links">
                         <a class="navbar-link" href="#adress">Студии</a>
-                        <a class="navbar-link" href="#adress">Цены</a>
-                        <a class="navbar-link" href="#adress">Акции</a>
                         <a class="navbar-link" href="#bonuses">Бонусная программа</a>
                         <a class="navbar-link" href="#instagram">Instagram</a>
                         <a class="navbar-link" href="pages/blog.html">Блог</a>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="main-container__advantages--midle">
-                    <div class="advantages-card">
+                    <div class="advantages-card container">
                         <div class="advantages-card__item">
                             <div class="advantages-card__item--sircle">
                                 <img src="img/nashi_2.png" alt="">
@@ -112,7 +112,7 @@
                                     <h3>+7 (495) 123-45-67</h3>
                                 </div>
                                 <div class="price-card__item--box">
-                                    <img src="img/passage-of-time.png" alt="">
+                                    <img src="img/passage-of-time.svg" alt="">
                                     <p>Время работы : ежедневно: 09:00 - 22:00</p>
                                 </div>
                             </a>
@@ -126,7 +126,7 @@
                                     <h3>+7 (495) 123-45-67</h3>
                                 </div>
                                 <div class="price-card__item--box">
-                                    <img src="img/passage-of-time.png" alt="">
+                                    <img src="img/passage-of-time.svg" alt="">
                                     <p>Время работы : ежедневно: 09:00 - 22:00</p>
                                 </div>
                             </a>
@@ -145,12 +145,44 @@
             <div class="main-container-bonuses" id="bonuses">
                 <div class="title-default">
                     <h1>Бонусная программа</h1>
+
+                    <p class="red-text">1 бонус = 1 рубль</p>
                 </div>
 
-                <div class="main-container-bonuses--midle">
-                    <div class="bonuses-card">
-                        <div class="bonuses-card__title">
-                            <img src="img/give-money.png" alt="">
+                <div class="main-container-bonuses--midle container">
+                    <div class="new-card">
+                        <div class="advantages-card__item new-card__item">
+                            <a href="#first" class="gallery">
+                                <div class="advantages-card__item--sircle">
+                                    <img src="img/give-money.png">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="advantages-card__item new-card__item">
+                            <a href="#second" class="gallery">
+                                <div class="advantages-card__item--sircle">
+                                    <img src="img/magic-wand.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="advantages-card__item new-card__item">
+                            <a href="#third" class="gallery">
+                                <div class="advantages-card__item--sircle">
+                                    <img src="img/diamond.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="block-cutaway">
+                        <img src="img/визитка.png" alt="">
+                    </div>
+
+
+                    <div class="bonus-card" id="first">
+                        <div class="bonus-card__title">
+                            <img class="dnone" src="img/give-money.png" alt="">
                             <h3>Фиксированный кэшбэк</h3>
                         </div>
 
@@ -163,9 +195,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bonuses-card">
-                        <div class="bonuses-card__title">
-                            <img src="img/magic-wand.png" alt="">
+
+                    <div class="bonus-card" id="second">
+                        <div class="bonus-card__title">
+                            <img class="dnone" src="img/magic-wand.png" alt="">
                             <h3>Накапливайте бонусы и расплачивайтесь за услуги</h3>
                         </div>
 
@@ -185,9 +218,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bonuses-card">
-                        <div class="bonuses-card__title">
-                            <img src="img/diamond.png" alt="">
+
+                    <div class="bonus-card" id="third">
+                        <div class="bonus-card__title">
+                            <img class="dnone" src="img/diamond.png" alt="">
                             <h3>Учавствуйте в акциях и получайте подарки</h3>
                         </div>
 
@@ -210,16 +244,7 @@
                     <img src="img/instagram (1).png" alt="">
                 </div>
 
-                <div class="main-container-instagram__midle">
-                    <a href="https://www.instagram.com/celebrity_nail/">
-                        <img src="img/31038461_169535057214982_8321863271917289472_n.jpg" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/celebrity_nail/">
-                        <img src="img/31038461_169535057214982_8321863271917289472_n.jpg" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/celebrity_nail/">
-                        <img src="img/31038461_169535057214982_8321863271917289472_n.jpg" alt="">
-                    </a>
+                <div class="main-container-instagram__midle container">
                     <a href="https://www.instagram.com/celebrity_nail/">
                         <img src="img/31038461_169535057214982_8321863271917289472_n.jpg" alt="">
                     </a>
@@ -246,7 +271,7 @@
 
         <!--Footer начало-->
         <footer>
-            <div class="footer-container">
+            <div class="footer-container container">
                 <div class="footer-container__modal">
                     <a href="#boss" class="gallery">Написать директору</a>
                     <a href="pages/comments.html">Отзывы</a>
@@ -316,13 +341,11 @@
                                 src="img/soc33.png" alt=""></a>
                     </div>
                     <div class="footer-container__social-bottom">
-                        <p>Разработка сайта <a href="https://d-partners.ru">Digital-агентство D-Partners</a></p>
+                        <img src="img/contact.svg" alt="">
+                        <p>какойтоемаил@mail.ru</p>
                     </div>
                 </div>
                 <!--Место для виджита-->
-                <div class="footer-container__btn">
-                    <div class="pulse">Online-запись</div>
-                </div>
             </div>
         </footer>
         <!--Footer конец-->

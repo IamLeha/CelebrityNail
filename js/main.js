@@ -26,6 +26,27 @@ for (var i = 0; i < 3; i++) {
         });
     });
 }
+
+$('#manicure').click(function(){
+    $('#cosmetology').style.display = 'none',
+    $('#manicure').style.display = 'none',
+    $('#hairmaster').style.display = 'none'
+})
+
+$(function() {
+    $('.toggles button').click(function(){
+        var get_id = this.id;
+        var get_current = $('.posts .' + get_id);
+
+        $('.post').not(get_current).hide(500);
+        get_current.show(500);
+    });
+
+    $('#showall').click(function(){
+        $('.post').show(500);
+        alert
+    });
+})
 /*
 $('a[href^="#adress"]').bind('click.smoothscroll', function (e) {
     e.preventDefault();
