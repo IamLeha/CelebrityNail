@@ -1670,25 +1670,30 @@ header {
 .bottom__box-arrow-prev {
   cursor: pointer;
   width: 50px;
-  margin-left: 15px; }
+  /*position: relative;
+    top: 15rem;
+    right: 4%;*/ }
 
 .bottom__box-arrow-next {
   cursor: pointer;
   width: 50px;
-  margin-right: 13px; }
+  /*position: relative;
+    bottom: 15.7rem;
+    left: 102%;*/ }
 
 .arrow-prev {
   cursor: pointer;
   width: 40px;
-  margin-left: 25px;
-  position: absolute; }
+  position: relative;
+  right: 7%;
+  top: 112px; }
 
 .arrow-next {
   cursor: pointer;
   width: 40px;
-  margin-right: 23px;
-  position: absolute;
-  right: 0; }
+  position: relative;
+  left: 104%;
+  bottom: 200px; }
 
 .map {
   width: 48%;
