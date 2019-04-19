@@ -157,6 +157,15 @@ header {
         border-bottom: 1px solid white;
         padding: 5% 0 5% 0;
     }
+    .box-logo {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .box-logo {
+        margin-left: 3%;
+    }
 }
 
     /*Для вертикального меню*/
