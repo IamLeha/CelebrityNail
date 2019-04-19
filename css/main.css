@@ -1686,7 +1686,8 @@ header {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .littleSlider--item p {
   text-align: center; }
