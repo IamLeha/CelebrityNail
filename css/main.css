@@ -1917,4 +1917,6 @@ header {
   .text {
     margin-top: 4%; }
   .other a {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .line {
+    display: none; } }
