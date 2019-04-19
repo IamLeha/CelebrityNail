@@ -334,6 +334,10 @@ form input::-webkit-input-placeholder {
         margin: 0 auto;
     }
 
+    input[type="button"] {
+        width: 105px;
+        height: 32px;
+    }
 
     textarea {
         width: 90%;

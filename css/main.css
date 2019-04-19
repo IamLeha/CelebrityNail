@@ -450,6 +450,9 @@ form input::-webkit-input-placeholder {
   input[type="text"] {
     width: 90%;
     margin: 0 auto; }
+  input[type="button"] {
+    width: 105px;
+    height: 32px; }
   textarea {
     width: 90%;
     margin: 20px auto !important; }
@@ -652,7 +655,9 @@ header {
     border-bottom: 1px solid white;
     padding: 5% 0 5% 0; }
   .box-logo {
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .main-img {
+    height: 35.7vw; } }
 
 @media screen and (max-width: 340px) {
   .box-logo {
@@ -1310,8 +1315,7 @@ header {
       width: 100%; }
     .blog-box__txt {
       margin-left: 0%;
-      width: 100%;
-      text-align: center; } }
+      width: 100%; } }
 
 .main-container__comment {
   width: 100%; }
@@ -1363,6 +1367,7 @@ header {
   display: none; }
 
 .item-comment {
+  display: flex;
   margin-top: 30px; }
   .item-comment__right {
     margin-left: 35px; }
@@ -1534,8 +1539,18 @@ header {
     flex-direction: column; }
   .btn-review {
     margin-top: 25px; }
-  .item-comment__right {
-    margin-left: 10px; } }
+  .item-comment {
+    display: flex;
+    flex-direction: column; }
+    .item-comment__right {
+      margin-left: 10px; }
+  .triangle {
+    display: none; }
+  .item-comment__left {
+    margin: 0 auto !important;
+    margin-bottom: 20px !important; }
+  .item-comment__right--name h3 {
+    width: 100%; } }
 
 .main-img-studia {
   background: url(../img/main-img.jpg) 100% 75% no-repeat;
@@ -1556,9 +1571,6 @@ header {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   align-items: center; }
 
 .main-img-studia img {

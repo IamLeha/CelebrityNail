@@ -4,7 +4,8 @@
         width: 100%;
     }
 }
-.mt{
+
+.mt {
     margin-top: 99px;
 }
 
@@ -36,6 +37,7 @@
 }
 
 .item-comment {
+    display: flex;
     margin-top: 30px;
 
     &__right {
@@ -74,7 +76,7 @@
     border-color: transparent #2C2C2C transparent transparent;
     border-style: solid;
     -webkit-transform: rotate(12deg);
-            transform: rotate(12deg);
+    transform: rotate(12deg);
     position: relative;
     top: -18px;
     right: 51px;
@@ -91,7 +93,7 @@
     border-radius: 25px;
     border: none;
     -webkit-box-shadow: 0px 2px 7px #a4a3a3;
-            box-shadow: 0px 2px 7px #a4a3a3;
+    box-shadow: 0px 2px 7px #a4a3a3;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, #e2e2e2), color-stop(41%, #f3f3f3), color-stop(57%, #f3f3f3), to(#c1c1c1));
     background: linear-gradient(to bottom, #e2e2e2 17%, #f3f3f3 41%, #f3f3f3 57%, #c1c1c1 100%);
     cursor: pointer;
@@ -135,7 +137,7 @@
     width: 700px;
 }
 
-    /*Media*/
+/*Media*/
 
 @media screen and (max-width:1025px) {
     .addReview {
@@ -168,7 +170,7 @@
     .head {
         @include dflex(space-between, center);
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
 
         &__title {
             width: 100%;
@@ -199,13 +201,36 @@
         @include dflex (unset, center);
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
-    .btn-review{
+
+    .btn-review {
         margin-top: 25px;
     }
-    .item-comment__right{
-        margin-left: 10px;
+
+    .item-comment {
+        display: flex;
+        flex-direction: column;
+
+        &__right {
+            margin-left: 10px;
+        }
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .item-comment {
+    
+        &__left {
+            margin: 0 auto !important;
+            margin-bottom: 20px !important;
+        }
+
+        &__right--name h3{
+            width: 100%;
+        }
     }
 }

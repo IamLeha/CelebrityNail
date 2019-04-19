@@ -10,9 +10,6 @@
     top: 100px;
     margin-bottom: 100px;
     @include dflex(center,center);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .main-img-studia img {
