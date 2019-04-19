@@ -530,9 +530,21 @@ header {
   top: 100px;
   -webkit-box-shadow: 0 3px 2px 0 #7d7878;
   box-shadow: 0 3px 2px 0 #7d7878;
-  height: 45.7vw;
+  height: 25.7vw;
   background-size: 100%;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main-img img {
+  max-width: 60%; }
 
 /*Mobile Menu*/
 .nav-burger {
@@ -1188,37 +1200,26 @@ header {
   .main-container-blog__pagination a:last-child {
     border: none; }
 
-.blog {
+.blog-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   -webkit-box-align: unset;
   -ms-flex-align: unset;
-  align-items: unset;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto; }
-
-.blog-box {
-  width: 40%; }
+  align-items: unset; }
   .blog-box__img {
-    width: 100%; }
+    width: 35%; }
   .blog-box__img img {
-    width: 100%;
-    height: 100%; }
-  .blog-box__img p {
-    padding: 10px;
-    background: #5754543d;
-    position: relative;
-    bottom: 100px;
-    padding-left: 4%; }
-  .blog-box__txt p {
-    position: relative;
-    bottom: 60px; }
+    width: 100%; }
+  .blog-box__txt {
+    margin-left: 10%;
+    width: 65%; }
+
+.blog-box:not(:last-child) {
+  margin-bottom: 7%; }
 
 .main-container-blogs {
   width: 100%;
@@ -1260,7 +1261,7 @@ header {
 
 @media screen and (max-width: 769px) {
   .main-container-blog {
-    padding-top: 12%; }
+    padding-top: 14%; }
     .main-container-blog__pagination {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1287,12 +1288,30 @@ header {
       -ms-flex-align: unset;
       align-items: unset;
       width: 80%; }
-  .blog-box {
-    width: 90%; }
   .main-container-blogs {
     margin-bottom: -70px; }
   .blogs__txt {
-    bottom: 4rem; } }
+    bottom: 4rem; }
+  .blog-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    flex-wrap: wrap; }
+    .blog-box__img {
+      width: 100%;
+      margin: 0 auto; }
+    .blog-box__img img {
+      width: 100%; }
+    .blog-box__txt {
+      margin-left: 0%;
+      width: 100%;
+      text-align: center; } }
 
 .main-container__comment {
   width: 100%; }
@@ -1528,7 +1547,22 @@ header {
   background-size: 100%;
   position: relative;
   top: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-img-studia img {
+  max-width: 60%; }
 
 .main-container__tabs {
   width: 80%;
@@ -1635,6 +1669,13 @@ header {
   -ms-flex-align: center;
   align-items: center; }
 
+.littleSlider--item a {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block; }
+
 .littleSlider--item p {
   text-align: center; }
 
@@ -1643,10 +1684,8 @@ header {
   font-size: 20px; }
 
 .littleSlider--item img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 .toggles {
   margin: 20px 0 15px 0; }
@@ -1710,19 +1749,21 @@ header {
   align-items: unset;
   padding: 2% 0; }
 
+.bs--container {
+  position: relative; }
+
 .bottom__box-arrow-prev {
   cursor: pointer;
   width: 50px;
-  /*position: relative;
-    top: 15rem;
-    right: 4%;*/ }
+  position: absolute;
+  top: 45%; }
 
 .bottom__box-arrow-next {
   cursor: pointer;
   width: 50px;
-  /*position: relative;
-    bottom: 15.7rem;
-    left: 102%;*/ }
+  position: absolute;
+  right: 0;
+  top: 45%; }
 
 .arrow-prev {
   cursor: pointer;
@@ -1789,7 +1830,18 @@ header {
   .text__title h2 {
     font-size: 28px; }
   .text__number h4 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .bottom__box-arrow-prev {
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    top: 40%; }
+  .bottom__box-arrow-next {
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 40%; } }
 
 @media screen and (max-width: 769px) {
   .img-card {

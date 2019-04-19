@@ -48,9 +48,14 @@ header {
     top: 100px;
     -webkit-box-shadow: 0 3px 2px 0 #7d7878;
             box-shadow: 0 3px 2px 0 #7d7878;
-    height: 45.7vw;
+    height: 25.7vw;
     background-size: 100%;
     margin-bottom: 100px;
+    @include dflex(center,center);
+}
+
+.main-img img{
+    max-width: 60%;
 }
 
 /*Mobile Menu*/
