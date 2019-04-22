@@ -12,7 +12,7 @@ footer {
     @include dflex(center, unset);
 
     &__modal {
-        width: 60% !important;
+        width: 50% !important;
         padding: 2% 2% 2% 0 !important;
         @include dflex(flex-end, unset);
         -ms-flex-wrap: wrap;
@@ -22,14 +22,14 @@ footer {
     &__modal a {
         padding: 10px;
         border: 1px solid #575454;
-        width: 40%;
+        width: 35%;
         @include dflex(center, center);
         text-align: center;
         min-width: 120px;
     }
 
     &__modal a:nth-child(odd){
-        margin-right: 10%;
+        margin-right: 20px;
     }
 
     &__modal a:nth-child(3) {
@@ -238,6 +238,19 @@ form input::-webkit-input-placeholder {
 
 /*Media*/
 
+@media screen and (max-width: 1025px){
+    .footer-container{
+
+        &__modal{
+            width: 58% !important;
+        }
+    }
+
+    .box-logo{
+        width: 30% !important;
+    }
+}
+
 @media screen and (max-width: 769px) {
     .footer-container {
         @include dflex(unset, center);
@@ -247,12 +260,12 @@ form input::-webkit-input-placeholder {
                 flex-direction: column;
 
         &__modal {
-            width: 70% !important;
+            width: 77% !important;
             padding: 2%;
             @include dflex(center, unset);
         }
         &__social {
-            width: 70%;
+            width: 77%;
         }
 
         &__social-top {

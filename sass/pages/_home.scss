@@ -30,13 +30,13 @@
 
     &__item p {
         width: 70%;
-        margin-top: 2%;
+        margin-top: 20px;
         text-align: center;
     }
 
     &__item--sircle {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         background: #fff;
         border-radius: 50%;
         @include dflex(center, center);
@@ -139,10 +139,6 @@
     }
 }
 
-.red-text {
-    color: red;
-}
-
 .price--img {
     transform: rotate(90deg);
     display: flex !important;
@@ -210,7 +206,7 @@
 }
 
 .block-cutaway img {
-    width: 400px;
+    width: 320px;
     border-radius: 15px;
 }
 

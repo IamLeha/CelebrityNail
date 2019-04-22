@@ -9,11 +9,6 @@
     position: relative;
     top: 100px;
     margin-bottom: 100px;
-    @include dflex(center,center);
-}
-
-.main-img-studia img {
-    max-width: 60%;
 }
 
 .main-container {
@@ -112,7 +107,7 @@
 }
 
 .littleSlider--item {
-    min-height: 200px !important;
+    min-height: 150px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -127,8 +122,8 @@
 
 .littleSlider--item a {
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -241,8 +236,8 @@
     cursor: pointer;
     width: 40px;
     position: relative;
-    right: 7%;
-    top: 112px;
+    right: 2%;
+    top: 93px;
 }
 
 
@@ -250,8 +245,8 @@
     cursor: pointer;
     width: 40px;
     position: relative;
-    left: 104%;
-    bottom: 200px;
+    left: 99%;
+    bottom: 170px;
 }
 
 .map {
