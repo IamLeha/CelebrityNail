@@ -185,15 +185,11 @@
 
 .new-card {
     width: 100%;
-    @include dflex(space-between, unset);
+    @include dflex(center, unset);
     margin-top: 2%;
 
     &__item {
-        @include dflex(center, unset);
-    }
-
-    &__item a {
-        @include dflex(center, unset);
+        margin: 0 40px;
     }
 }
 
@@ -347,17 +343,6 @@
         }
     }
 
-    .new-card {
-
-        &__item {
-            @include dflex (center, unset);
-        }
-
-        &__item:nth-child(3) {
-            margin-top: 0;
-        }
-    }
-
     .main-container-instagram {
 
         &__midle a {
@@ -489,8 +474,9 @@
     }
 
     .new-card {
-        &__item:nth-child(3) {
-            margin-top: 4%;
+
+        &__item{
+            margin: 15px 15px;
         }
 
         &__item a {
