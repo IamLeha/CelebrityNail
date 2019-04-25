@@ -295,6 +295,18 @@
     padding: 10px;
 }
 
+.linkPrice {
+    @include dflex(space-around, center);
+    margin: 40px 0 40px 0;
+}
+
+.linkPrice a {
+    padding: 10px;
+    border: 1px solid #575454;
+    text-align: center;
+    font-size: 20px;
+}
+
 /*Media*/
 
 @media screen and (max-width: 1025px) {
@@ -475,7 +487,7 @@
 
     .new-card {
 
-        &__item{
+        &__item {
             margin: 15px 15px;
         }
 
@@ -502,5 +514,18 @@
         background-image: -webkit-gradient(linear, right top, left top, color-stop(1%, #2b2929), to(#00000000));
         background-image: linear-gradient(-90deg, #2b2929 100%, #00000000);
         padding: 3% 0 3% 0;
+    }
+
+    .linkPrice{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .linkPrice a{
+        width: 100%;
+    }
+
+    .linkPrice a:nth-child(2){
+        margin-top: 30px;
     }
 }

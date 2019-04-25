@@ -8,8 +8,8 @@ function Clear() {
     document.getElementById('Myform1').reset();
 }
 
-var arr = ['a[href^="#adress"]', 'a[href^="#bonuses"]', 'a[href^="#instagram"]','a[href^="#price"]','a[href^="#master"]','a[href^="#contact"]']
-for (var i = 0; i < 6; i++) {
+var arr = ['a[href^="#adress"]', 'a[href^="#bonuses"]', 'a[href^="#instagram"]','a[href^="#price"]','a[href^="#master"]','a[href^="#contact"]','a[href^="#mainPrice"]']
+for (var i = 0; i < 7; i++) {
 
     $(arr[i]).bind('click.smoothscroll', function (e) {
         e.preventDefault();
